@@ -183,44 +183,148 @@
 </section>
 <!-- End About Us Section -->
 
-<!-- Our Clients Section -->
-<section id="our-clients" class="customers section">
-  <div class="container section-title" data-aos="fade-up">
-    <span>Our Clients</span>
-    <h2>Our Clients</h2>
-    <p>Berikut adalah beberapa klien kami yang telah mempercayai Aftech Solutions.</p>
-  </div><!-- End Section Title -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Clients - Aftech Solutions</title>
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="customer-slider owl-carousel">
-      
-      <div class="customer-item">
-        <a href="https://trijee.com/" target="_blank">
-          <img src="https://trijee.com/cdn/shop/files/LOGO_WEBSITE_340X100_d3722cc1-96e1-4f83-b3fb-823da4d5183d_140x.png?v=1724755648" class="img-fluid customer-logo" alt="Trijee">
-        </a>
+  <!-- Link CSS Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
+  <!-- Link Font & Custom CSS -->
+  <style>
+    /* Section Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .customers {
+      background-color: #ffffff;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .customer-slider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    /* Customer Logo Styling */
+    .customer-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+    }
+
+    .customer-logo {
+      max-width: 150px;
+      height: auto;
+      transition: transform 0.3s ease-in-out, opacity 0.3s;
+      opacity: 0.9;
+    }
+
+    .customer-logo:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  </style>
+
+  <!-- Link jQuery & Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+
+  <!-- Our Clients Section -->
+  <section id="our-clients" class="customers section">
+    <div class="container section-title">
+      <span>Our Clients</span>
+      <h2>Our Clients</h2>
+      <p>Berikut adalah beberapa klien kami yang telah mempercayai Aftech Solutions.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+      <div class="customer-slider owl-carousel">
+        
+        <div class="customer-item">
+          <a href="https://trijee.com/" target="_blank">
+            <img src="https://trijee.com/cdn/shop/files/LOGO_WEBSITE_340X100_d3722cc1-96e1-4f83-b3fb-823da4d5183d_140x.png?v=1724755648" 
+                 class="img-fluid customer-logo" 
+                 alt="Trijee"
+                 loading="lazy">
+          </a>
+        </div>
+        
+        <div class="customer-item">
+          <a href="https://www.company2.com" target="_blank">
+            <img src="https://www.company2.com/logo.png" 
+                 class="img-fluid customer-logo" 
+                 alt="Company 2"
+                 loading="lazy">
+          </a>
+        </div>
+        
+        <div class="customer-item">
+          <a href="https://www.company3.com" target="_blank">
+            <img src="https://www.company3.com/logo.png" 
+                 class="img-fluid customer-logo" 
+                 alt="Company 3"
+                 loading="lazy">
+          </a>
+        </div>
+        
+        <div class="customer-item">
+          <a href="https://www.company4.com" target="_blank">
+            <img src="https://www.company4.com/logo.png" 
+                 class="img-fluid customer-logo" 
+                 alt="Company 4"
+                 loading="lazy">
+          </a>
+        </div>
+
       </div>
-      
-      <div class="customer-item">
-        <a href="https://www.company2.com" target="_blank">
-          <img src="https://www.company2.com/logo.png" class="img-fluid customer-logo" alt="Company 2">
-        </a>
-      </div>
-      
-      <div class="customer-item">
-        <a href="https://www.company3.com" target="_blank">
-          <img src="https://www.company3.com/logo.png" class="img-fluid customer-logo" alt="Company 3">
-        </a>
-      </div>
-      
-      <div class="customer-item">
-        <a href="https://www.company4.com" target="_blank">
-          <img src="https://www.company4.com/logo.png" class="img-fluid customer-logo" alt="Company 4">
-        </a>
-      </div>
-      
     </div>
-  </div>
-</section><!-- /Our Clients Section -->
+  </section><!-- /Our Clients Section -->
+
+  <!-- Script Slider -->
+  <script>
+    $(document).ready(function(){
+      $(".customer-slider").owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        responsive: {
+          0: { items: 2 },
+          600: { items: 3 },
+          1000: { items: 4 }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
 
 <!-- Contact Section -->
 <section id="contact" class="contact section" data-aos="fade-up">
