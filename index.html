@@ -37,6 +37,7 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#our-clients">Our Clients</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -224,27 +225,24 @@
 <!-- Contact Section -->
 <section id="contact" class="contact section">
   <div class="container section-title" data-aos="fade-up">
-    <span>Contact Us</span>
+    <span>Contact</span>
     <h2>Contact Us</h2>
-    <p>Hubungi kami untuk informasi lebih lanjut tentang layanan dan solusi kami.</p>
+    <p>Hubungi kami untuk informasi lebih lanjut atau pertanyaan lainnya.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="contact-info">
       <div class="contact-item">
         <i class="fas fa-map-marker-alt"></i>
-        <h4>Address</h4>
         <p>Amara Living D11, Bogor, Jawa Barat</p>
       </div>
       <div class="contact-item">
         <i class="fas fa-phone"></i>
-        <h4>Phone</h4>
-        <p><a href="tel:+6285156095138">0851 5609 5138</a></p>
+        <p><strong>Phone:</strong> 0851 5609 5138</p>
       </div>
       <div class="contact-item">
         <i class="fas fa-envelope"></i>
-        <h4>Email</h4>
-        <p><a href="mailto:bangunciptateknologi@gmail.com">bangunciptateknologi@gmail.com</a></p>
+        <p><strong>Email:</strong> <a href="mailto:bangunciptateknologi@gmail.com">bangunciptateknologi@gmail.com</a></p>
       </div>
     </div>
   </div>
@@ -253,7 +251,7 @@
 <!-- Include Owl Carousel CSS and JS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
   .customer-item {
@@ -270,27 +268,23 @@
   .customer-item:hover .customer-logo {
     filter: grayscale(0%);
   }
+  
   .contact-info {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     text-align: center;
-    margin-top: 20px;
   }
   .contact-item {
-    flex: 1;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  .contact-item:hover {
-    transform: scale(1.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
   }
   .contact-item i {
-    font-size: 30px;
+    font-size: 22px;
     color: #007bff;
-    margin-bottom: 10px;
   }
 </style>
 
@@ -314,6 +308,7 @@
     });
   });
 </script>
+
 
   </main>
 
