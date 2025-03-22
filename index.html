@@ -234,15 +234,15 @@
     <div class="contact-info">
       <div class="contact-item">
         <i class="fas fa-map-marker-alt"></i>
-        <p>Amara Living D11, Bogor, Jawa Barat</p>
+        <span><strong>Alamat:</strong> Amara Living D11, Bogor, Jawa Barat</span>
       </div>
       <div class="contact-item">
         <i class="fas fa-phone"></i>
-        <p><strong>Phone:</strong> 0851 5609 5138</p>
+        <span><strong>Phone:</strong> 0851 5609 5138</span>
       </div>
       <div class="contact-item">
         <i class="fas fa-envelope"></i>
-        <p><strong>Email:</strong> <a href="mailto:bangunciptateknologi@gmail.com">bangunciptateknologi@gmail.com</a></p>
+        <span><strong>Email:</strong> <a href="mailto:bangunciptateknologi@gmail.com">bangunciptateknologi@gmail.com</a></span>
       </div>
     </div>
   </div>
@@ -269,12 +269,14 @@
     filter: grayscale(0%);
   }
   
-  .contact-info {
+   .contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    text-align: center;
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
   }
   .contact-item {
     display: flex;
@@ -285,6 +287,13 @@
   .contact-item i {
     font-size: 22px;
     color: #007bff;
+  }
+  .contact-item a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .contact-item a:hover {
+    text-decoration: underline;
   }
 </style>
 
