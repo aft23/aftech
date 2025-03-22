@@ -223,77 +223,110 @@
 </section><!-- /Our Clients Section -->
 
 <!-- Contact Section -->
- <section id="contact" class="contact section py-5 bg-light">
-  <div class="container section-title" data-aos="fade-up">
-    <span>Contact</span>
+<section id="contact" class="contact section" data-aos="fade-up">
+  <div class="container section-title">
     <h2>Contact Us</h2>
     <p>Hubungi kami untuk informasi lebih lanjut atau pertanyaan lainnya.</p>
-  </div><!-- End Section Title -->
+  </div>
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="contact-info">
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span><strong>Alamat:</strong> Amara Living D11, Bogor, Jawa Barat</span>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <span><strong>Phone:</strong> 0851 5609 5138</span>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <span><strong>Email:</strong> <a href="mailto:bangunciptateknologi@gmail.com">bangunciptateknologi@gmail.com</a></span>
-      </div>
+  <div class="container contact-info">
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <span><strong>Alamat:</strong> Amara Living D11, Bogor, Jawa Barat</span>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <span><strong>Phone:</strong> <a href="tel:085156095138">0851 5609 5138</a></span>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <span><strong>Email:</strong> <a href="mailto:bangunciptateknologi@gmail.com">bangunciptateknologi@gmail.com</a></span>
     </div>
   </div>
-</section><!-- /Contact Section -->
+</section>
 
-<!-- Include Owl Carousel CSS and JS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- Link AOS (Animate On Scroll) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
 
+<!-- CSS -->
 <style>
-  .customer-item {
+  /* Background dan Padding */
+  .contact {
+    background: linear-gradient(to right, #007bff, #00c6ff); /* Gradasi warna */
+    padding: 60px 20px;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    color: white;
+    border-radius: 10px;
   }
-  .customer-logo {
-    filter: grayscale(100%);
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+
+  .contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #fff;
   }
-  .customer-item:hover {
-    transform: scale(1.1);
-  }
-  .customer-item:hover .customer-logo {
-    filter: grayscale(0%);
-  }
-  
-   .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    text-align: left;
+
+  .contact-info {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
     max-width: 500px;
     margin: auto;
   }
+
   .contact-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     font-size: 18px;
+    color: white;
+    margin: 15px 0;
   }
+
   .contact-item i {
-    font-size: 22px;
-    color: #007bff;
+    font-size: 26px;
+    color: yellow; /* Warna ikon */
+    transition: transform 0.3s;
   }
+
+  .contact-item:hover i {
+    transform: scale(1.2);
+  }
+
   .contact-item a {
-    color: #007bff;
+    color: #ffeb3b; /* Warna link */
+    font-weight: bold;
     text-decoration: none;
+    transition: color 0.3s;
   }
+
   .contact-item a:hover {
-    text-decoration: underline;
+    color: #ff5722; /* Warna saat hover */
+  }
+
+  /* Efek Hover dan Shadow */
+  .contact-info {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .contact-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsif */
+  @media (max-width: 768px) {
+    .contact-item {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 </style>
 
