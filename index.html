@@ -48,114 +48,174 @@
   <main>
     
 <!-- Hero Section -->
-<section id="hero" class="hero section bg-light" data-aos="fade-up">
+<section id="hero" class="hero section bg-light position-relative overflow-hidden" data-aos="fade-up">
   <div class="container">
-      <div class="row align-items-center">
-        <!-- Kolom Kiri (Teks & Daftar Layanan) -->
-        <div class="col-lg-6" data-aos="fade-up">
-          <h1>One Stop IT Solution</h1>
-          <p>Kami adalah perusahaan yang bergerak di bidang IT Solutions. Kami memberikan analisa, memecahkan masalah, dan menghadirkan solusi terbaik untuk kebutuhan IT Anda.</p>
-          <ul>
-            <li><i class="fas fa-tools"></i> IT Support & Konsultasi</li>
-            <li><i class="fas fa-headset"></i> Helpdesk Onsite & Remote Troubleshooting</li>
-            <li><i class="fas fa-laptop"></i>  Komputer, Laptop, MacBook & Printer</li>
-            <li><i class="fas fa-network-wired"></i> Jaringan & Keamanan IT</li>
-            <li><i class="fas fa-globe"></i> Pembuatan Website, Aplikasi, & SEO</li>
-            <li><i class="fas fa-sync-alt"></i> Maintenance & Optimization</li>
-          </ul>
-        </div>
+    <div class="row align-items-center">
+      <!-- Kolom Kiri (Teks & Daftar Layanan) -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <h1 class="fw-bold text-primary">Solusi IT Terlengkap untuk Anda</h1>
+        <p class="lead text-muted">
+          Kami hadir untuk menganalisa, memecahkan masalah, dan memberikan solusi terbaik untuk semua kebutuhan IT Anda.
+        </p>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-tools text-primary"></i> <strong>IT Support & Konsultasi</strong></li>
+          <li><i class="fas fa-headset text-success"></i> <strong>Helpdesk Onsite & Remote Troubleshooting</strong></li>
+          <li><i class="fas fa-laptop text-danger"></i> <strong>Komputer, Laptop, MacBook & Printer</strong></li>
+          <li><i class="fas fa-network-wired text-warning"></i> <strong>Jaringan & Keamanan IT</strong></li>
+          <li><i class="fas fa-globe text-info"></i> <strong>Pembuatan Website, Aplikasi, & SEO</strong></li>
+          <li><i class="fas fa-sync-alt text-secondary"></i> <strong>Maintenance & Optimization</strong></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-lg mt-3">Konsultasi Sekarang <i class="fas fa-arrow-right"></i></a>
+      </div>
 
-        <!-- Kolom Kanan (Gambar) -->
-        <div class="col-lg-6" data-aos="zoom-out">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="IT Solutions">
-        </div>
+      <!-- Kolom Kanan (Gambar dengan Efek) -->
+      <div class="col-lg-6 text-center" data-aos="zoom-in">
+        <img src="assets/img/hero-img.png" class="img-fluid hero-image animated" alt="IT Solutions">
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: 80px 0;
+  }
+  
+  .hero-image {
+    animation: floating 3s infinite ease-in-out alternate;
+  }
+
+  @keyframes floating {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+</style>
 
 <!-- Services Section -->
-<section id="services" class="services section">
+<section id="services" class="services section bg-light py-5">
   <div class="container">
-    <div class="row">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span>Services</span>
-        <h2>Services</h2>
-        <p>Kami menyediakan berbagai layanan IT yang profesional untuk mendukung kebutuhan bisnis Anda.</p>
-      </div><!-- End Section Title -->
-      
+    
+    <!-- Section Title -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-primary fw-bold">Layanan Kami</span>
+      <h2 class="fw-bold">Solusi IT Terbaik untuk Anda</h2>
+      <p class="text-muted">Kami menyediakan berbagai layanan IT profesional untuk mendukung bisnis dan kebutuhan teknologi Anda.</p>
+    </div>
+    
+    <div class="row g-4">
       <!-- IT Support & Konsultasi -->
-      <div class="col-lg-4" data-aos="fade-up">
-        <div class="service-box">
-          <i class="bi bi-headset"></i>
-          <h4>IT Support & Konsultasi</h4>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-box p-4 text-center shadow rounded">
+          <div class="icon-box bg-primary text-white">
+            <i class="bi bi-headset"></i>
+          </div>
+          <h4 class="mt-3">IT Support & Konsultasi</h4>
           <p>Kami membantu menyelesaikan berbagai permasalahan IT serta memberikan solusi terbaik sesuai kebutuhan Anda.</p>
         </div>
       </div>
 
       <!-- Helpdesk Onsite & Remote Troubleshooting -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-box">
-          <i class="bi bi-tools"></i>
-          <h4>Helpdesk Onsite & Remote Troubleshooting</h4>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-box p-4 text-center shadow rounded">
+          <div class="icon-box bg-success text-white">
+            <i class="bi bi-tools"></i>
+          </div>
+          <h4 class="mt-3">Helpdesk Onsite & Remote Troubleshooting</h4>
           <p>Menangani troubleshooting perangkat dan sistem IT, baik secara onsite maupun remote.</p>
         </div>
       </div>
 
       <!-- Service Komputer & Printer -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-box">
-          <i class="bi bi-laptop"></i>
-          <h4>Service Komputer & Printer</h4>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-box p-4 text-center shadow rounded">
+          <div class="icon-box bg-danger text-white">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <h4 class="mt-3">Service Komputer & Printer</h4>
           <p>Perbaikan dan pemeliharaan perangkat komputer, laptop, dan printer agar tetap dalam kondisi optimal.</p>
         </div>
       </div>
 
       <!-- Jaringan & Keamanan IT -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-box">
-          <i class="bi bi-shield-lock"></i>
-          <h4>Jaringan & Keamanan IT</h4>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-box p-4 text-center shadow rounded">
+          <div class="icon-box bg-warning text-white">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+          <h4 class="mt-3">Jaringan & Keamanan IT</h4>
           <p>Solusi pengelolaan jaringan yang handal serta sistem keamanan data untuk bisnis Anda.</p>
         </div>
       </div>
 
       <!-- Pembuatan Website & SEO -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-box">
-          <i class="bi bi-code-slash"></i>
-          <h4>Pembuatan Website & SEO</h4>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-box p-4 text-center shadow rounded">
+          <div class="icon-box bg-info text-white">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h4 class="mt-3">Pembuatan Website & SEO</h4>
           <p>Pembuatan website profesional serta optimasi SEO agar bisnis Anda lebih mudah ditemukan di mesin pencari.</p>
         </div>
       </div>
 
       <!-- Maintenance & Optimization -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="service-box">
-          <i class="bi bi-gear"></i>
-          <h4>Maintenance & Optimization</h4>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-box p-4 text-center shadow rounded">
+          <div class="icon-box bg-secondary text-white">
+            <i class="bi bi-gear"></i>
+          </div>
+          <h4 class="mt-3">Maintenance & Optimization</h4>
           <p>Perawatan sistem IT dan optimasi performa agar bisnis Anda berjalan lebih efisien.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Custom Styles -->
+<style>
+  .service-box {
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .icon-box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+</style>
     
-    <!-- About Us Section -->
+  <!-- About Us Section -->
 <section id="about" class="about-section py-5 bg-light">
   <div class="container text-center" data-aos="fade-up">
-    <img src="assets/img/apple-touch-icon.png" alt="Aftech Solutions Logo" class="mb-3" width="150">
-    <h2 class="fw-bold">Aftech Solutions</h2>
-    <p class="text-muted">Mitra terpercaya dalam solusi IT inovatif untuk bisnis Anda di Jabodetabek (visit) dan seluruh Indonesia (remote).</p>
+    <img src="assets/img/apple-touch-icon.png" alt="Aftech Solutions Logo" class="mb-3" width="120">
+    <h2 class="fw-bold text-primary">Aftech Solutions</h2>
+    <p class="text-muted lead">
+      Mitra terpercaya dalam solusi IT inovatif untuk bisnis Anda di Jabodetabek (visit) dan seluruh Indonesia (remote).
+    </p>
   </div>
+
   <div class="container mt-5">
     <div class="row align-items-center">
       
       <!-- Bagian Gambar -->
-      <div class="col-lg-6 mb-4" data-aos="fade-right">
-        <img src="assets/img/about.png" class="img-fluid rounded shadow-sm" alt="About Aftech Solutions">
+      <div class="col-lg-6 text-center" data-aos="fade-right">
+        <img src="assets/img/about.png" class="img-fluid rounded shadow-lg about-img" alt="About Aftech Solutions">
       </div>
 
       <!-- Bagian Konten -->
@@ -165,21 +225,70 @@
           Aftech Solutions menghadirkan layanan IT profesional dengan fokus pada efisiensi, keamanan, dan inovasi teknologi untuk mendukung pertumbuhan bisnis Anda.
         </p>
 
-        <ul class="list-unstyled">
-          <li class="mb-3"><i class="bi bi-shield-lock-fill text-primary"></i> <span class="fw-semibold">Keamanan Data Terjamin</span> – Sistem perlindungan data yang kuat dan terpercaya.</li>
-          <li class="mb-3"><i class="bi bi-gear-wide-connected text-success"></i> <span class="fw-semibold">Solusi IT Modern</span> – Disesuaikan dengan kebutuhan bisnis Anda.</li>
-          <li class="mb-3"><i class="bi bi-lightning-charge-fill text-danger"></i> <span class="fw-semibold">Respon Cepat</span> – Layanan teknis profesional dengan waktu tanggap cepat.</li>
-        </ul>
+        <div class="features">
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-box bg-primary text-white">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <p class="mb-0 ms-3"><span class="fw-semibold">Keamanan Data Terjamin</span> – Sistem perlindungan data yang kuat dan terpercaya.</p>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-box bg-success text-white">
+              <i class="bi bi-gear-wide-connected"></i>
+            </div>
+            <p class="mb-0 ms-3"><span class="fw-semibold">Solusi IT Modern</span> – Disesuaikan dengan kebutuhan bisnis Anda.</p>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-box bg-danger text-white">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <p class="mb-0 ms-3"><span class="fw-semibold">Respon Cepat</span> – Layanan teknis profesional dengan waktu tanggap cepat.</p>
+          </div>
+        </div>
 
         <p class="text-muted">
           Kami siap membantu bisnis di Jabodetabek secara langsung dan seluruh Indonesia melalui layanan remote yang fleksibel dan andal.
         </p>
+
+        <a href="#contact" class="btn btn-primary btn-lg mt-3">Hubungi Kami <i class="bi bi-arrow-right"></i></a>
       </div>
 
     </div>
   </div>
 </section>
 <!-- End About Us Section -->
+
+<!-- Custom Styles -->
+<style>
+  .about-section {
+    padding: 80px 0;
+  }
+
+  .about-img {
+    animation: floating 3s infinite ease-in-out alternate;
+    max-width: 90%;
+  }
+
+  .icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+  }
+
+  @keyframes floating {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+</style>
+
 
 <!DOCTYPE html>
 <html lang="id">
@@ -248,183 +357,272 @@
 </head>
 <body>
 
-  <!-- Our Clients Section -->
-  <section id="our-clients" class="customers section">
-    <div class="container section-title">
-      <span>Our Clients</span>
-      <h2>Our Clients</h2>
-      <p>Berikut adalah beberapa klien kami yang telah mempercayai Aftech Solutions.</p>
-    </div><!-- End Section Title -->
+<!-- Our Clients Section -->
+<section id="our-clients" class="customers section">
+  <div class="container section-title">
+    <span>OUR CLIENTS</span>
+    <h2 class="section-title">OUR CLIENTS</h2>
+    <p>Berikut adalah beberapa klien kami yang telah mempercayai Aftech Solutions.</p>
+  </div>
 
-    <div class="container">
-      <div class="customer-slider owl-carousel">
-        
-        <div class="customer-item">
-          <a href="https://trijee.com/" target="_blank">
-            <img src="https://trijee.com/cdn/shop/files/LOGO_WEBSITE_340X100_d3722cc1-96e1-4f83-b3fb-823da4d5183d_140x.png?v=1724755648" 
-                 class="img-fluid customer-logo" 
-                 alt="Trijee"
-                 loading="lazy">
-          </a>
-        </div>
-        
-        <div class="customer-item">
-          <a href="https://www.company2.com" target="_blank">
-            <img src="https://www.company2.com/logo.png" 
-                 class="img-fluid customer-logo" 
-                 alt="Company 2"
-                 loading="lazy">
-          </a>
-        </div>
-        
-        <div class="customer-item">
-          <a href="https://www.company3.com" target="_blank">
-            <img src="https://www.company3.com/logo.png" 
-                 class="img-fluid customer-logo" 
-                 alt="Company 3"
-                 loading="lazy">
-          </a>
-        </div>
-        
-        <div class="customer-item">
-          <a href="https://www.company4.com" target="_blank">
-            <img src="https://www.company4.com/logo.png" 
-                 class="img-fluid customer-logo" 
-                 alt="Company 4"
-                 loading="lazy">
-          </a>
-        </div>
-
+  <div class="container">
+    <div class="customer-slider owl-carousel">
+      
+      <div class="customer-item">
+        <a href="https://trijee.com/" target="_blank">
+          <img src="https://trijee.com/cdn/shop/files/LOGO_WEBSITE_340X100_d3722cc1-96e1-4f83-b3fb-823da4d5183d_140x.png?v=1724755648" 
+               class="img-fluid customer-logo" 
+               alt="Trijee"
+               loading="lazy">
+        </a>
       </div>
-    </div>
-  </section><!-- /Our Clients Section -->
+      
+      <div class="customer-item">
+        <a href="https://www.company2.com" target="_blank">
+          <img src="https://www.company2.com/logo.png" 
+               class="img-fluid customer-logo" 
+               alt="Company 2"
+               loading="lazy">
+        </a>
+      </div>
+      
+      <div class="customer-item">
+        <a href="https://www.company3.com" target="_blank">
+          <img src="https://www.company3.com/logo.png" 
+               class="img-fluid customer-logo" 
+               alt="Company 3"
+               loading="lazy">
+        </a>
+      </div>
+      
+      <div class="customer-item">
+        <a href="https://www.company4.com" target="_blank">
+          <img src="https://www.company4.com/logo.png" 
+               class="img-fluid customer-logo" 
+               alt="Company 4"
+               loading="lazy">
+        </a>
+      </div>
 
-  <!-- Script Slider -->
-  <script>
-    $(document).ready(function(){
-      $(".customer-slider").owlCarousel({
-        loop: true,
-        margin: 20,
-        autoplay: true,
-        autoplayTimeout: 2500,
-        autoplayHoverPause: true,
-        responsive: {
-          0: { items: 2 },
-          600: { items: 3 },
-          1000: { items: 4 }
-        }
-      });
+    </div>
+  </div>
+</section><!-- /Our Clients Section -->
+
+<!-- CSS -->
+<style>
+  /* Gaya untuk teks besar di belakang */
+  .section-title-overlay {
+    font-size: 80px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.08); /* Lebih transparan agar tidak mengganggu */
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Gaya untuk teks utama */
+  .section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+
+  /* Gaya umum */
+  .customers {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    background-color: #f9f9f9;
+  }
+
+  .customer-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .customer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .customer-logo {
+    max-width: 120px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+    filter: grayscale(100%);
+  }
+
+  .customer-logo:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+  }
+
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .section-title-overlay {
+      font-size: 60px;
+      top: -15px;
+    }
+
+    .section-title {
+      font-size: 26px;
+    }
+
+    .customer-logo {
+      max-width: 100px;
+    }
+  }
+</style>
+
+<!-- Script Slider -->
+<script>
+  $(document).ready(function(){
+    $(".customer-slider").owlCarousel({
+      loop: true,
+      margin: 20,
+      autoplay: true,
+      autoplayTimeout: 2500,
+      autoplayHoverPause: true,
+      responsive: {
+        0: { items: 2 },
+        600: { items: 3 },
+        1000: { items: 4 }
+      }
     });
-  </script>
+  });
+</script>
+
 
 </body>
 </html>
 
 <!-- Contact Us Section -->
- <section id="contact" class="contact section" data-aos="fade-up">
-   <div class="container section-title">
-     <h2>Contact Us</h2>
+<section id="contact" class="contact section">
+  <div class="container section-title">
+    <span>CONTACT US</span>
+    <h2 class="section-title">CONTACT US</h2>
     <p>Hubungi kami untuk informasi lebih lanjut atau pertanyaan lainnya.</p>
   </div>
-  <div class="container contact-info">
-     <div class="contact-item">
-       <i class="fas fa-map-marker-alt"></i>
-       <span><strong>Alamat:</strong> Amara Living D11, Bogor, Jawa Barat</span>
-     </div>
-     <div class="contact-item">
-       <i class="fas fa-phone"></i>
-       <span><strong>Phone:</strong> <a href="tel:085156095138">0851 5609 5138</a></span>
-     </div>
-     <div class="contact-item">
-       <i class="fas fa-envelope"></i>
-       <span><strong>Email:</strong> <a href="mailto:bangunciptateknologi@gmail.com">bangunciptateknologi@gmail.com</a></span>
+
+  <div class="container">
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span><strong>Alamat:</strong> Amara Living D11, Bogor, Jawa Barat</span>
       </div>
+      
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <span><strong>Phone:</strong> 
+          <a href="tel:085156095138">0851 5609 5138</a>
+        </span>
       </div>
+      
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span><strong>Email:</strong> 
+          <a href="mailto:bangunciptateknologi@gmail.com">bangunciptateknologi@gmail.com</a>
+        </span>
+      </div>
+    </div>
   </div>
 </section>
 
-       
-<!-- Link AOS (Animate On Scroll) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true
-  });
-</script>
-
 <!-- CSS -->
 <style>
-  /* Background dan Padding */
-  .contact {
-    background: linear-gradient(to right, #007bff, #00c6ff); /* Gradasi warna */
-    padding: 60px 20px;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
+  /* Style untuk teks besar di belakang */
+  .section-title-overlay {
+    font-size: 80px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.08); /* Lebih redup agar tidak mengganggu */
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .contact h2 {
-    font-size: 32px;
+  /* Style untuk teks utama */
+  .section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    position: relative;
+    z-index: 1;
     margin-bottom: 10px;
-    color: #fff;
+  }
+
+  /* Style umum */
+  .contact {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
   }
 
   .contact-info {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 20px;
-    border-radius: 10px;
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 12px;
     display: inline-block;
-    max-width: 500px;
+    max-width: 550px;
     margin: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   }
 
   .contact-item {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     font-size: 18px;
-    color: white;
-    margin: 15px 0;
+    color: #444;
+    margin: 18px 0;
   }
 
   .contact-item i {
-    font-size: 26px;
-    color: yellow; /* Warna ikon */
-    transition: transform 0.3s;
-  }
-
-  .contact-item:hover i {
-    transform: scale(1.2);
+    font-size: 22px;
+    color: #007bff;
   }
 
   .contact-item a {
-    color: #ffeb3b; /* Warna link */
+    color: #007bff;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s;
   }
 
   .contact-item a:hover {
-    color: #ff5722; /* Warna saat hover */
+    color: #0056b3;
   }
 
-  /* Efek Hover dan Shadow */
-  .contact-info {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-
-  .contact-info:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Responsif */
+  /* Responsive */
   @media (max-width: 768px) {
+    .section-title-overlay {
+      font-size: 60px;
+      top: -15px;
+    }
+
+    .section-title {
+      font-size: 26px;
+    }
+
+    .contact-info {
+      max-width: 90%;
+    }
+
     .contact-item {
-      flex-direction: column;
-      text-align: center;
+      font-size: 16px;
     }
   }
 </style>
