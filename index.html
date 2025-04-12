@@ -404,7 +404,7 @@
         <a href="https://psikotes.psikologiperspective.com/sign-in?redirectURL=%2Fdashboard" target="_blank">
           <img src="https://psikotes.psikologiperspective.com/assets/images/logo/logo.png" 
                class="img-fluid customer-logo" 
-               alt="Company 2"
+               alt="Psikologi Perspective"
                loading="lazy">
         </a>
       </div>
@@ -429,7 +429,8 @@
 
     </div>
   </div>
-</section><!-- /Our Clients Section -->
+</section>
+
 
 <!-- CSS -->
 <style>
@@ -449,58 +450,71 @@
 
   /* Gaya untuk teks utama */
   .section-title {
-    font-size: 30px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 10px;
-  }
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
 
   /* Gaya umum */
   .customers {
-    padding: 80px 20px;
-    text-align: center;
-    position: relative;
-    background-color: #f9f9f9;
-  }
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  background-color: #f9f9f9;
+}
 
-  .customer-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Kurangi jarak antar logo */
-    flex-wrap: wrap;
-  }
+ .customer-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 
-  .customer-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px; /* Kurangi padding agar lebih rapat */
-    flex: 1 1 auto;
-    max-width: 140px;
+ .customer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 140px;
+  height: 100px;
+  background-color: #fff; /* opsional, biar lebih rapi */
+  border-radius: 10px;     /* opsional */
+  box-shadow: 0 0 5px rgba(0,0,0,0.05); /* opsional */
+}
+
+.customer-logo {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  filter: grayscale(100%);
+}
+
+  .customer-logo:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+  /* Responsiveness */
+ @media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
   }
 
   .customer-logo {
-    max-width: 140px; /* Perkecil logo agar lebih seragam */
-    height: auto;
-    transition: transform 0.3s ease-in-out, opacity 0.3s;
-    filter: grayscale(100%);
+    width: 100px;
+    height: 70px;
   }
 
-  .customer-logo:hover {
-    transform: scale(1.1);
-    filter: grayscale(0%);
+  .customer-slider {
+    gap: 5px;
   }
-
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .section-title-overlay {
-      font-size: 60px;
-      top: -15px;
-    }
+}
 
     .section-title {
       font-size: 26px;
